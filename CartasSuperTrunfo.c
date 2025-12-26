@@ -38,7 +38,7 @@ int main() {
 superpoder = Populacao + Area + PIB + Densidade + xcapita + Pontos;
  
         // Área para exibição dos dados da cidade
-        printf("Carta 1\n - Estado: %c\n - Código: %s\n - Nome da Cidade: %s\n - População: %d\n - Pontos Turísticos: %d\n - Área: %.2lfkm²\n - PIB: %.2lfbilhões de reais\n - Densidade Populacional é: %.2lf\n - PIB per Capita é: %.2lf - Super poder: %.2lf\n", Estado, Código, Nome, Populacao, Pontos, Area, PIB, Densidade, xcapita, superpoder);
+        printf("Carta 1\n - Estado: %c\n - Código: %s\n - Nome da Cidade: %s\n - População: %d\n - Pontos Turísticos: %d\n - Área: %.2lfkm²\n - PIB: %.2lfbilhões de reais\n - Densidade Populacional é: %.2lf\n - PIB per Capita é: %.2lf\n - Super poder: %.2lf\n", Estado, Código, Nome, Populacao, Pontos, Area, PIB, Densidade, xcapita, superpoder);
 int populacaoC1 = Populacao;
       double areaC1 = Area;
       double PIBC1 = PIB;
@@ -67,7 +67,7 @@ int populacaoC1 = Populacao;
       xcapita = (double) (PIB / Populacao);
       superpoder = Populacao + Area + PIB + Densidade + xcapita + Pontos;
       
-      printf("Carta 2\n - Estado: %c\n - Código: %s\n - Nome da Cidade: %s\n - População: %d\n - Pontos Turísticos: %d\n - Área: %.2lfkm²\n - PIB: %.2lfbilhões de reais\n - Densidade Populacional é: %.2lf\n - PIB per Capita é: %.2lf Super poder: %.2f\n", Estado, Código, Nome, Populacao, Pontos, Area, PIB, Densidade, xcapita, superpoder);
+      printf("Carta 2\n - Estado: %c\n - Código: %s\n - Nome da Cidade: %s\n - População: %d\n - Pontos Turísticos: %d\n - Área: %.2lfkm²\n - PIB: %.2lfbilhões de reais\n - Densidade Populacional é: %.2lf\n - PIB per Capita é: %.2lf\n - Super poder: %.2f\n", Estado, Código, Nome, Populacao, Pontos, Area, PIB, Densidade, xcapita, superpoder);
 int populacaoC2 = Populacao;
       double areaC2 = Area;
       double PIBC2 = PIB;
@@ -80,7 +80,7 @@ printf(" Carta 1 venceu: %d\n", populacaoC1 > populacaoC2 );
 printf("Carta 1 venceu: %d\n", areaC1 > areaC2);
 printf("Carta 1 venceu: %d\n", PIBC1 > PIBC2);
 printf("Carta 1 venceu: %d\n", pontosC1 > pontosC2);
-printf("Carta 1 venceu: %d\n", densidadec1 > densidadec2);
+printf("Carta 2 venceu: %d\n", densidadec1 < densidadec2);
 printf("Carta 1 venceu: %d\n", xcapitac1 > xcapitac2);
 printf("Carta 1 venceu: %d\n", Superpoderc1 > Superpoderc2);
         return 0;

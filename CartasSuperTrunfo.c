@@ -83,6 +83,16 @@ printf("Carta 1 venceu: %d\n", pontosC1 > pontosC2);
 printf("Carta 2 venceu: %d\n", densidadec1 < densidadec2);
 printf("Carta 1 venceu: %d\n", xcapitac1 > xcapitac2);
 printf("Carta 1 venceu: %d\n", Superpoderc1 > Superpoderc2);
+
+double carta1 = areaC1 + PIBC1 + pontosC1 + densidadec1 + xcapitac1 + Superpoderc1; 
+double carta2 = areaC2 + PIBC2 + pontosC2 + densidadec2 + xcapitac2 + Superpoderc2;
+
+if (carta1 > carta2){
+      printf("Carta 1 venceu\n");
+} else {
+      printf("Carta 2 venceu\n");
+ }
+printf("A carta vencedora é: %.2lf\n", carta1);
         return 0;
 
 

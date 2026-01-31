@@ -209,7 +209,7 @@ printf("D. Pontos Turísticos\n");
 printf("E. Densidade Populacional\n");
 scanf(" %c", &atributo);
 
-
+// operador ternário
 switch (atributo)
 {
 case 'A':

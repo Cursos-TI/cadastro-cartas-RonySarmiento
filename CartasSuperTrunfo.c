@@ -195,6 +195,105 @@ switch(opcao) {
 
       default:
             printf("Opção inválida! Tente novamente.\n");
+break;
+}
+
+char atributo;
+int resultado, resultado1;
+
+printf("Escolha o primeiro atributo\n");
+printf("A. População\n");
+printf("B. Área\n");
+printf("C. PIB\n");
+printf("D. Pontos Turísticos\n");
+printf("E. Densidade Populacional\n");
+scanf(" %c", &atributo);
+
+
+switch (atributo)
+{
+case 'A':
+case 'a':
+      printf("Você escolheu População!\n");
+      resultado = populacaoC1 > populacaoC2 ? 1: 0;
+      break;
+case 'B':
+case 'b':
+      printf("Você escolheu Área!\n");
+      resultado = areaC1 > areaC2 ? 1: 0;
+      break;
+case 'C':
+case 'c':
+      printf("Você escolheu PIB!\n");
+      resultado = PIBC1 > PIBC2 ? 1: 0;
+      break;
+case 'D':
+case 'd':
+      printf("Você escolheu Pontos Turísticos!\n");
+      resultado = pontosC1 > pontosC2 ? 1: 0;
+      break;
+case 'E':
+case 'e':
+      printf("Você escolheu Densidade Populacional!\n");
+      resultado = densidadec1 < densidadec2 ? 1: 0;
+      break;
+
+default:
+      printf("Opção inválida!\n");
+      break;
+}
+      char atributo1;
+printf("Escolha o segundo atributo\n");
+printf("A. População\n");
+printf("B. Área\n");
+printf("C. PIB\n");
+printf("D. Pontos Turísticos\n");
+printf("E. Densidade Populacional\n");
+
+scanf(" %c", &atributo1);
+
+if (atributo == atributo1)
+{
+      printf("Você não pode escolher o mesmo atributo duas vezes!\n");
+      
+}else switch (atributo1)
+{
+case 'A':
+case 'a':
+      printf("Você escolheu População!\n");
+      resultado1 = populacaoC1 > populacaoC2 ? 1: 0;
+      break;
+case 'B':
+case 'b':
+      printf("Você escolheu Área!\n");
+      resultado1 = areaC1 > areaC2 ? 1: 0;
+      break;
+case 'C':
+case 'c':
+      printf("Você escolheu PIB!\n");
+      resultado1 = PIBC1 > PIBC2 ? 1: 0;
+      break;
+case 'D':
+case 'd':
+      printf("Você escolheu Pontos Turísticos!\n");
+      resultado1 = pontosC1 > pontosC2 ? 1: 0;
+      break;
+case 'E':
+case 'e':
+      printf("Você escolheu Densidade Populacional!\n");
+      resultado1 = densidadec1 < densidadec2 ? 1: 0;
+      break;
+
+default:
+      printf("Opção inválida!\n");
+      break;
+}
+if (resultado && resultado1){
+      printf("Carta 1 é a vencedora na comparação dos dois atributos!\n");
+} else if (resultado != resultado1){
+       printf("Cada carta venceu em um atributo! Empate na comparação dos dois atributos!\n");
+}else {
+      printf("Carta 2 é a vencedora na comparação dos dois atributos!\n");
 }
 
 return 0;

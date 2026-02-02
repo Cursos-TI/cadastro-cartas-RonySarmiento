@@ -76,13 +76,13 @@ int populacaoC2 = Populacao;
       double xcapitac2 = xcapita;
       double Superpoderc2 = superpoder;
 
-printf(" Carta 1 venceu: %d\n", populacaoC1 > populacaoC2 );
-printf("Carta 1 venceu: %d\n", areaC1 > areaC2);
-printf("Carta 1 venceu: %d\n", PIBC1 > PIBC2);
-printf("Carta 1 venceu: %d\n", pontosC1 > pontosC2);
-printf("Carta 2 venceu: %d\n", densidadec1 < densidadec2);
-printf("Carta 1 venceu: %d\n", xcapitac1 > xcapitac2);
-printf("Carta 1 venceu: %d\n", Superpoderc1 > Superpoderc2);
+printf("População: Carta 1 venceu: %d\n", populacaoC1 > populacaoC2 );
+printf("Área:Carta 1 venceu: %d\n", areaC1 > areaC2);
+printf("PIB: Carta 1 venceu: %d\n", PIBC1 > PIBC2);
+printf("Pontos Turísticos: Carta 1 venceu: %d\n", pontosC1 > pontosC2);
+printf("Densidade Populacional: Carta 2 venceu: %d\n", densidadec1 < densidadec2);
+printf("PIB per Capita: Carta 1 venceu: %d\n", xcapitac1 > xcapitac2);
+printf("Super Poder: Carta 1 venceu: %d\n", Superpoderc1 > Superpoderc2);
 
 double carta1 = areaC1 + PIBC1 + pontosC1 + densidadec1 + xcapitac1 + Superpoderc1; 
 double carta2 = areaC2 + PIBC2 + pontosC2 + densidadec2 + xcapitac2 + Superpoderc2;
